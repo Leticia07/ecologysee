@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    color: #3c5241;
+}
+
+header {
+    position: relative;
+}
+
+.menu_container {
+    display: flex;
+    padding: 20px;
+    background-color: #97dea7;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu_container .menu_desktop ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    padding: 10px;
+}
+
+header ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #3c5241;
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+}
+
+.menu_container .icon_mobile {
+    display: none;
+}
+
+.menu_container .icon_mobile a {
+    color: #fff;
+}
+
+header .menu_mobile {
+    background-color: #97dea7;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+
+header .menu_mobile ul {
+    list-style: none;
+    text-align: center;
+    width: 100%;
+}
+
+header .menu_mobile ul li {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+@media only screen and (min-width: 867px){
+    header .menu_mobile {
+        display: none!important;
+    }
+}
+
+@media only screen and (max-width: 866px){
+    .menu_container .menu_desktop {
+        display: none;
+    }
+    .menu_container .icon_mobile {
+        display: block;
+    }
+}

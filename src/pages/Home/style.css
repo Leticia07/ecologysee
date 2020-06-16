@@ -1,0 +1,253 @@
+.welcome_container {
+    display: flex;
+    flex-direction: column;
+    padding: 150px 100px;
+    align-items: center;
+    background-image: url("../../assets/back.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.welcome_container img {
+    max-width: 250px;
+    width: 100%;
+}
+
+.welcome_container h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 6vw;
+    margin-bottom: 20px;
+}
+
+.about_us_container {
+    padding: 200px 0!important;
+}
+
+.about_us_container p {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.understand .title {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    margin: 100px auto;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 900px;
+    width: 95%;
+}
+
+.content .part {
+    color: #3c5241;
+    margin: 20px 0;
+}
+
+.content .part img {
+    max-width: 900px;
+    width: 100%;
+}
+
+.content .part h1 {
+    font-size: 35px;
+}
+
+.content .part p {
+    font-size: 20px;
+    text-align: justify;
+    margin: 20px 0;
+}
+
+.content .part ol {
+    margin-left: 20px;
+}
+
+/* PARTNER */
+
+.partner_container form {
+    margin: 0 auto;
+    padding: 0 64px;
+    max-width: 730px;
+    background: #FFF;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.partner_container form h1 {
+    font-size: 36px;
+}
+
+.partner_container form fieldset {
+    margin-top: 64px;
+    min-inline-size: auto;
+    border: 0;
+}
+
+.partner_container form legend {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.partner_container form legend h2 {
+    font-size: 24px;
+}
+
+.partner_container form legend span {
+    font-size: 14px;
+    font-weight: normal;
+    color: var(--text-color);
+}
+
+.partner_container form .field-group {
+    flex: 1;
+    display: flex;
+}
+
+.partner_container form .field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.partner_container form .field input[type=text],
+.partner_container form .field input[type=email],
+.partner_container form .field input[type=number] {
+    flex: 1;
+    background: #F0F0F5;
+    border-radius: 8px;
+    border: 0;
+    padding: 16px 24px;
+    font-size: 16px;
+    color: #6C6C80;
+}
+
+.partner_container form .field select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    flex: 1;
+    background: #F0F0F5;
+    border-radius: 8px;
+    border: 0;
+    padding: 16px 24px;
+    font-size: 16px;
+    color: #6C6C80;
+}
+
+.partner_container form .field input::placeholder {
+    color: #A0A0B2;
+}
+
+.partner_container form .field label {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.partner_container form .field :disabled {
+    cursor: not-allowed;
+}
+
+.partner_container form .field-group .field+.field {
+    margin-left: 24px;
+}
+
+.partner_container form .field-group input+input {
+    margin-left: 24px;
+}
+
+.partner_container form .field-check {
+    flex-direction: row;
+    align-items: center;
+}
+
+.partner_container form .field-check input[type=checkbox] {
+    background: #F0F0F5;
+}
+
+.partner_container form .field-check label {
+    margin: 0 0 0 8px;
+}
+
+.partner_container form .leaflet-container {
+    width: 100%;
+    height: 350px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+
+.partner_container form button {
+    width: 260px;
+    height: 56px;
+    background: #2FB86E;
+    border-radius: 8px;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 16px;
+    border: 0;
+    align-self: flex-end;
+    margin-top: 40px;
+    transition: background-color 0.2s;
+    cursor: pointer;
+    transition: opacity .2s;
+}
+
+.partner_container form button:hover {
+    opacity: .8;
+}
+
+@media only screen and (max-width: 500px){
+    .partner_container form {
+        padding: 0;
+    }
+    .partner_container form .field-group {
+        flex-direction: column;
+        flex: 1;
+    }
+    .partner_container form .field-group .field+.field {
+        margin: 0!important;
+    }
+}
+
+
+/* PARTNER */
+
+.search_partners_container .leaflet-container {
+    width: 100%;
+    height: 350px;
+    border-radius: 8px;
+    margin: 30px 0;
+}
+
+.search_partners_container .button a {
+    padding: 20px;
+    background: #2FB86E;
+    border-radius: 8px;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 16px;
+    border: 0;
+    align-self: flex-end;
+    cursor: pointer;
+    transition: opacity .2s;
+    text-decoration: none;
+}
+
+.search_partners_container .button a:hover {
+    opacity: .8;
+}
